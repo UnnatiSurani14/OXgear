@@ -1,0 +1,102 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./pages/*.html', './assets/**/*.js'],
+  theme: {
+    extend: {
+      fontFamily: {
+        Playfair: ['Playfair Display', 'serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+        PlusJakarta: ['Plus Jakarta Sans', 'sans-serif'],
+      },
+      colors: {
+        White: '#FFFFFF',
+        Purple: '#3B1B34',
+        Brown: {
+          100: '#5E3614',
+          200: '#714921',
+          300: '#C4A169',
+          400: '#8d6434',
+        },
+        Crem: {
+          100: '#f9ecca',
+          200: '#F9ECCA',
+          300: '#DBC18F',
+        },
+      },
+      flex: {
+        1: '1 1 0%',
+        0: '0 0 auto',
+        auto: '1 1 auto',
+      },
+      fontSize: {
+        14: '14px',
+        16: '16px',
+        20: '20px',
+        24: '24px',
+        64: '64px',
+      },
+      fontWeight: {
+        600: '600',
+        700: '700',
+        800: '800',
+      },
+      padding: {
+        10: '10px',
+        15: '15px',
+        20: '20px',
+        25: '25px',
+        28: '28px',
+        30: '30px',
+        35: '35px',
+        40: '40px',
+      },
+      margin: {
+        10: '10px',
+        15: '15px',
+        20: '20px',
+        25: '25px',
+        28: '28px',
+        30: '30px',
+        35: '35px',
+        40: '40px',
+      },
+      borderRadius: {
+        10: '10px',
+        15: '15px',
+        30: '30px',
+      },
+      gap: {
+        8: '8px',
+        16: '16px',
+        20: '20px',
+      },
+      width: {},
+      height: {
+        48: '48px',
+        51: '51px',
+      },
+      screens: {
+        lg: { min: '1024px' },
+        xl: { min: '1200px' },
+        xxl: { min: '1366px' },
+        xxxl: { min: '1440px' },
+        xl2: { min: '1510px' },
+        xl3: { min: '1600px' },
+
+        2560: { max: '2560px' },
+        1450: { max: '1450px' },
+        1366: { max: '1366px' },
+        1199: { max: '1199.9px' },
+        1023: { max: '1023px' },
+        991: { max: '991px' },
+        767: { max: '767px' },
+        639: { max: '639px' },
+        575: { max: '575px' },
+        479: { max: '479px' },
+        375: { max: '375px' },
+        320: { max: '320px' },
+      },
+    },
+    plugins: [],
+  },
+}
