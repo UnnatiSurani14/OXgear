@@ -10,6 +10,8 @@ module.exports = {
       },
       colors: {
         White: '#FFFFFF',
+        Black: '#000000',
+        lightBlack: '#434343',
         Purple: '#3B1B34',
         Brown: {
           100: '#5E3614',
@@ -21,6 +23,7 @@ module.exports = {
           100: '#f9ecca',
           200: '#F9ECCA',
           300: '#DBC18F',
+          400: '#A8814C',
         },
       },
       flex: {
@@ -29,13 +32,19 @@ module.exports = {
         auto: '1 1 auto',
       },
       fontSize: {
+        12: '12px',
         14: '14px',
+        15: '15.18px',
         16: '16px',
-        20: '20px',
+        18: '18px',
+        20: '20.87px',
         24: '24px',
-        64: '64px',
+        30: '30px',
+        40: '40px',
+        60: '60px',
       },
       fontWeight: {
+        500: '500',
         600: '600',
         700: '700',
         800: '800',
@@ -49,6 +58,13 @@ module.exports = {
         30: '30px',
         35: '35px',
         40: '40px',
+        50: '50px',
+        60: '60px',
+        70: '70px',
+        80: '80px',
+        82: '82px',
+        105: '105px',
+        135: '135px',
       },
       margin: {
         10: '10px',
@@ -59,6 +75,8 @@ module.exports = {
         30: '30px',
         35: '35px',
         40: '40px',
+        80: '80px',
+        100: '100px',
       },
       borderRadius: {
         10: '10px',
@@ -67,13 +85,20 @@ module.exports = {
       },
       gap: {
         8: '8px',
+        12: '12px',
         16: '16px',
         20: '20px',
+        22: '22px',
+        30: '30px',
       },
-      width: {},
+      width: {
+        48: '48px',
+      },
       height: {
         48: '48px',
         51: '51px',
+        90: '90px',
+        435: '435px',
       },
       screens: {
         lg: { min: '1024px' },
