@@ -3,6 +3,17 @@ module.exports = {
   content: ['./pages/*.html', './assets/**/*.js'],
   theme: {
     extend: {
+      animation: {
+        round: 'round 10s infinite',
+      },
+      keyframes: {
+        round: {
+          '0%': {transform: 'rotate(90deg)' },
+          '50%': { transform: 'rotate(180deg)'},
+          '75%':{transform:'rotate(270deg)'},
+          '100%':{transform:'rotate(360deg)'}
+        },
+      },
       fontFamily: {
         Playfair: ['Playfair Display', 'serif'],
         Montserrat: ['Montserrat', 'sans-serif'],
@@ -38,8 +49,10 @@ module.exports = {
         16: '16px',
         18: '18px',
         20: '20.87px',
+        22:'22px',
         24: '24px',
         30: '30px',
+        37:'37px',
         40: '40px',
         60: '60px',
       },
@@ -51,6 +64,7 @@ module.exports = {
       },
       padding: {
         10: '10px',
+        14:'14px',
         15: '15px',
         20: '20px',
         25: '25px',
@@ -63,11 +77,13 @@ module.exports = {
         70: '70px',
         80: '80px',
         82: '82px',
+        90:'90px',
         105: '105px',
         135: '135px',
       },
       margin: {
         10: '10px',
+        12:'12px',
         15: '15px',
         20: '20px',
         25: '25px',
@@ -75,6 +91,9 @@ module.exports = {
         30: '30px',
         35: '35px',
         40: '40px',
+        50:'50px',
+        60:'60px',
+        70:'70px',
         80: '80px',
         100: '100px',
       },
@@ -89,15 +108,20 @@ module.exports = {
         16: '16px',
         20: '20px',
         22: '22px',
+        24:'24px',
         30: '30px',
+        69:'69px',
       },
       width: {
+        40:'40px',
         48: '48px',
       },
       height: {
+        40:'40px',
         48: '48px',
         51: '51px',
         90: '90px',
+        290:'290px',
         435: '435px',
       },
       screens: {

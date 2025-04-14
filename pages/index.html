@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/logo2.png">
     <title>OX GEAR</title>
 
     <link rel="stylesheet" href="/dist/style.css" />
@@ -33,6 +34,7 @@
         <p>Your Trusted Source for Premium Equestrian Gear | <span class="font-700">Free Shipping</span> on Orders Over $99!</p>
       </div>
       <div class="header-top">
+        <div class="header-top-menu">
         <div class="header-top-item">
           <a href="#" class="xl:ms-40">
             <img src="../assets/images/call.svg" alt="call" width="24" height="24" />
@@ -52,21 +54,25 @@
             <a href="#">Log in</a>
           </div>
           <div class="items">
-            <div class="search">
+            <div class="search cursor-pointer" id="search">
               <img src="../assets/images/search.svg" alt="search" width="24" height="24" />
             </div>
-            <div class="bag">
+            <div class="searchbar" id="searchbar">
+              <input type="text" placeholder="search....." class=" p-2 rounded-md w-[300px] ms-2 hidden">
+            </div>
+            <div class="bag cursor-pointer">
               <img src="../assets/images/bag.svg" alt="bag" width="24" height="24" />
             </div>
           </div>
         </div>
+      </div>
       </div>
       <div class="header-bottom">
         <div class="logo">
           <img src="../assets/images/Logo.png" alt="logo" width="171" height="174" />
         </div>
         <div class="header-bottom-item">
-          <div class="navbar">
+          <div class="navbar" id="toggle">
             <ul class="menu flex gap-22 font-semibold">
               <li class="menu-item"><a href="#" aria-label="Home">Home</a></li>
               <li class="menu-item"><a href="#" aria-label="Shop">Shop</a></li>
@@ -75,7 +81,10 @@
               <li class="menu-item"><a href="#" aria-label="Contact Us">Contact Us</a></li>
             </ul>
           </div>
-          <div class="shop-btn p-2"><a href="#" aria-label="shop now" class="btn uppercase">shop now</a></div>
+          <div class="shop-btn p-2 flex items-center gap-4">
+            <a href="#" aria-label="shop now" class="btn uppercase">shop now</a>
+            <button class="block xl:hidden" id="toggle"><img src="../assets/images/toggle.png" alt="toggle" width="24" height="24"></button>
+          </div>
         </div>
       </div>
     </header>
@@ -83,6 +92,7 @@
 
     <!-- banner -->
     <section class="banner relative">
+      <img src="../assets/images/_Group_.png" alt="group" width="266" height="242" class="image hidden xl:block">
       <div class="banner-item">
         <h1 class="h1">Premium Equestrian Gear – Built for Performance, Designed for Durability</h1>
         <div class="content xl:pe-60">
@@ -266,7 +276,7 @@
         <div class="w-full sm:w-[55%]">
           <div class="subtitle text-Brown-100">
             <img src="../assets/images/design2.png" alt="design" width="64.5" height="10" />
-            <p>Shop By Category</p>
+            <p>Best Seller</p>
           </div>
           <div class="title">
             <h2>Gear that Performs. Style that Lasts.</h2>
@@ -278,9 +288,14 @@
         <div class="viewAll">
           <a href="#" class="btn">View All</a>
         </div>
+        <div class="sliderButton">
+          <div class="slid-btn swiper-button-prev bg-Brown-300"><img src="../assets/images/left.svg" alt="prev" width="24" height="24" /></div>
+          <div class="slid-btn swiper-button-next bg-Brown-200"><img src="../assets/images/right.svg" alt="next" width="24" height="24" /></div>
+        </div>
       </div>
-      <div class="seller-item2 grid grid-cols-1 gap-30 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div class="card">
+      <div class="seller-swiper overflow-hidden relative seller-item2">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide card">
           <img src="../assets/images/card1.png" alt="image" width="305" height="218" />
           <div class="mt-1 flex justify-between">
             <div class="card-item">
@@ -298,12 +313,12 @@
               <p class="card-price">$279.00</p>
             </div>
           </div>
-          <div class="mt-40 479:mt-15 xl:mt-20">
+          <div class="mt-50 479:mt-20 md:mt-20 lg:mt-40 xl:mt-20">
             <p class="free-shipping">Free Shipping Over $100</p>
             <a href="#" class="cart-btn">Add to Cart</a>
           </div>
         </div>
-        <div class="card">
+        <div class="swiper-slide card">
           <img src="../assets/images/card2.png" alt="image" width="305" height="218" />
           <div class="mt-1 flex justify-between">
             <div class="card-item">
@@ -321,12 +336,12 @@
               <p class="card-price">$79.00</p>
             </div>
           </div>
-          <div class="mt-40 479:mt-15 xl:mt-20">
+          <div class="mt-50 479:mt-20 md:mt-20 lg:mt-40 xl:mt-20">
             <p class="free-shipping">Free Shipping Over $100</p>
             <a href="#" class="cart-btn">Add to Cart</a>
           </div>
         </div>
-        <div class="card">
+        <div class="swiper-slide card">
           <img src="../assets/images/card3.png" alt="image" width="305" height="218" />
           <div class="mt-1 flex justify-between">
             <div class="card-item">
@@ -344,12 +359,12 @@
               <p class="card-price">$299.00</p>
             </div>
           </div>
-          <div class="mt-40 479:mt-15 xl:mt-20">
+          <div class="mt-50 479:mt-20 md:mt-20 lg:mt-40 xl:mt-20">
             <p class="free-shipping">Free Shipping Over $100</p>
             <a href="#" class="cart-btn">Add to Cart</a>
           </div>
         </div>
-        <div class="card">
+        <div class="swiper-slide card">
           <img src="../assets/images/card4.png" alt="image" width="305" height="218" />
           <div class="mt-1 flex justify-between">
             <div class="card-item">
@@ -367,11 +382,12 @@
               <p class="card-price">$299.00</p>
             </div>
           </div>
-          <div class="479:mt-5 xl:-mt-1">
+          <div class="card-items">
             <p class="free-shipping">Free Shipping Over $100</p>
             <a href="#" class="cart-btn">Add to Cart</a>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- seller end -->
@@ -488,7 +504,7 @@
           <div class="swiper-slide">
             <div class="relative">
               <img src="../assets/images/photo.png" alt="photo" width="106" height="100" />
-              <div class="mark"><img src="../assets/images/“.png" alt="" /></div>
+              <div class="mark"><img src="../assets/images/“.png" alt="img" width="11" height="10.38"/></div>
             </div>
             <div class="my-20 text-center">
               <h2 class="h2">We’ve been using Ox Gear's custom saddle pads for years — durable, stylish, and they always get our colors just right. Top-notch quality!</h2>
@@ -504,7 +520,7 @@
           <div class="swiper-slide">
             <div class="relative">
               <img src="../assets/images/photo.png" alt="photo" width="106" height="100" />
-              <div class="mark"><img src="../assets/images/“.png" alt="" /></div>
+              <div class="mark"><img src="../assets/images/“.png" alt="img" width="11" height="10.38" /></div>
             </div>
             <div class="my-20 text-center">
               <h2 class="h2">We’ve been using Ox Gear's custom saddle pads for years — durable, stylish, and they always get our colors just right. Top-notch quality!</h2>
@@ -520,7 +536,7 @@
           <div class="swiper-slide">
             <div class="relative">
               <img src="../assets/images/photo.png" alt="photo" width="106" height="100" />
-              <div class="mark"><img src="../assets/images/“.png" alt="" /></div>
+              <div class="mark"><img src="../assets/images/“.png" alt="img" width="11" height="10.38" /></div>
             </div>
             <div class="my-20 text-center">
               <h2 class="h2">We’ve been using Ox Gear's custom saddle pads for years — durable, stylish, and they always get our colors just right. Top-notch quality!</h2>
@@ -544,7 +560,7 @@
 
     <!-- who-we-are -->
     <section class="who-we-are">
-      <div class="who-item w-[766px]">
+      <div class="who-item lg:w-[60%] xl:w-[766px]">
         <div class="subtitle">
           <img src="../assets/images/design.png" alt="design" width="64.5" height="10" />
           <p>Who We Are</p>
@@ -563,28 +579,119 @@
           </p>
         </div>
         <div class="check-menu mt-30">
-          <div class="check-menu-item mt-3 flex gap-2">
-            <img src="../assets/images/check-fill.png" alt="check" width="20" height="20" />
+          <div class="check-menu-item mt-3 flex items-center gap-2">
+            <img src="../assets/images/check-fill.png" alt="check" width="15" height="15" class="img"/>
             <h2 class="h2">Founded by Rick Alexander, a lifelong horseman and trainer</h2>
           </div>
-          <div class="check-menu-item mt-3 flex gap-2">
-            <img src="../assets/images/check-fill.png" alt="check" width="20" height="20" />
+          <div class="check-menu-item mt-3 flex items-center gap-2">
+            <img src="../assets/images/check-fill.png" alt="check" width="15" height="15" class="img"/>
             <h2 class="h2">Started as a tack shop, now a full-range custom gear brand</h2>
           </div>
-          <div class="check-menu-item mt-3 flex gap-2">
-            <img src="../assets/images/check-fill.png" alt="check" width="20" height="20" />
+          <div class="check-menu-item mt-3 flex items-center gap-2">
+            <img src="../assets/images/check-fill.png" alt="check" width="15" height="15" class="img"/>
             <h2 class="h2">Proudly designed and crafted in the USA</h2>
           </div>
         </div>
       </div>
-      <div class="who-item grid grid-cols-2 gap-2 p-40">
-        <img src="../assets/images/Mask group.png" alt="image" />
-        <img src="../assets/images/Mask group (1).png" alt="image" class="mt-80" />
-        <img src="../assets/images/Mask group (2).png" alt="image" />
-        <img src="../assets/images/Mask group (3).png" alt="image" />
+      <div class="who-item grid grid-cols-2 gap-2 p-40 lg:w-[40%] xl:w-[560px] lg:h-[400px] xl:h-auto">
+        <img src="../assets/images/Mask group.png" alt="image" width="265" height="285"/>
+        <img src="../assets/images/Mask group (1).png" alt="image" class="mt-40 md:mt-[76px] lg:mt-[43px] xl:mt-[73px]" width="265" height="206" />
+        <img src="../assets/images/Mask group (2).png" alt="image" width="265" height="206"/>
+        <img src="../assets/images/Mask group (3).png" alt="image" width="265" height="284"/>
       </div>
+      <img src="../assets/images/design3.png" alt="image" width="350" height="215" class="h-[215px] absolute bottom-0 right-0 hidden xl:block">
     </section>
     <!-- who-we-are end -->
+
+    <!-- contact -->
+     <section class="contact">
+      <div class="h-full xl:w-[50%] border xl:-mt-8 order-2 xl:order-1 mt-2">
+        <img src="../assets/images/contactimg.png" alt="image" width="697" height="290">
+      </div>
+      <div class="xl:w-[50%] xl:p-40 text-center order-1 xl:order-2">
+        <div class="title">
+          <h2>Ready to Ride with the Best?</h2>
+        </div>
+        <div class="content px-30">
+          <p>Explore high-quality, custom-made tack and gear trusted by riders and trainers across the country. Built to perform, crafted to last.</p>
+        </div>
+        <div class="mt-4 gap-2 flex flex-wrap items-center justify-center">
+          <a href="#" class="btn">Explore Our Collection</a>
+          <a href="#" class="btn-order">Request a Custom Order</a>
+        </div>
+      </div>
+     </section>
+     <!-- contact end -->
+
+     <!-- footer -->
+      <footer class="footer">
+          <div class="footer-menu">
+            <div class="footer-items">
+              <img src="../assets/images/logo2.png" alt="logo" width="125" height="125">
+              <div class="content text-White text-center xl:w-[60%]">
+                <p>Built on decades of experience in the thoroughbred industry, Ox Gear creates premium, custom equestrian gear using modern materials and expert craftsmanship.</p>
+              </div>
+            </div>
+            <div class="footer-items">
+              <div class="footer-title">
+                <h3>Quick Links</h3>
+              </div>
+              <ul class="md:flex gap-24">
+                <li><a href="#" aria-label="Home">Home</a></li>
+                <li><a href="#" aria-label="Shop">Shop</a></li>
+                <li><a href="#" aria-label="Custom Orders">Custom Orders</a></li>
+                <li><a href="#" aria-label="About Us">About Us</a></li>
+                <li><a href="#" aria-label="FAQ">FAQ</a></li>
+                <li><a href="#" aria-label="Contact Us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-items">
+              <div class="footer-title">
+                <h3>Customer Support</h3>
+              </div>
+              <ul class="md:flex gap-24">
+                <li><a href="#" aria-label="Shipping & Returns">Shipping & Returns</a></li>
+                <li><a href="#" aria-label="Track Order">Track Order</a></li>
+                <li><a href="#" aria-label="Terms & Conditions">Terms & Conditions</a></li>
+                <li><a href="#" aria-label="Privacy Policy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-items-1">
+                <a href="#">
+                  <div class="socil-icon">
+                    <img src="../assets/images/facebook.svg" alt="facbook" width="24" height="24">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="socil-icon">
+                    <img src="../assets/images/instagram.svg" alt="instagram" width="24" height="24">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="socil-icon">
+                    <img src="../assets/images/twitter.svg" alt="twitter" width="24" height="24">
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="socil-icon">
+                    <img src="../assets/images/linkdin.svg" alt="linkdin" width="24" height="24">
+                  </div>
+                </a>
+            </div>
+          </div>
+          <div class="bluePrint">
+            <div class="item">
+              <div class="content text-White text-16">
+                <p>© 2025 <a href="#">OxGear.com. All rights reserved.</a></p>
+              </div>
+            </div>
+            <div class="logo">
+              <img src="../assets/images/encircle-logo.png" alt="logo" width="92" height="45">
+            </div>
+          </div>
+      </footer>
+      <!-- footer end -->
+
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
