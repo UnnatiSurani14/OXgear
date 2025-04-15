@@ -68,10 +68,10 @@
     @apply h-auto bg-Brown-300 font-Montserrat text-14 text-White xl:h-51;
   }
   .header .header-top-menu{
-    @apply container ms-auto flex flex-wrap justify-between items-center h-full xl:px-105;
+    @apply container ms-auto flex flex-wrap justify-center sm:justify-between items-center h-full xl:px-105;
   }
   .header .header-top .header-top-item {
-    @apply flex h-full items-center justify-center p-1 xl:p-0;
+    @apply flex flex-wrap h-full items-center justify-center p-1 xl:p-0;
   }
   .header .header-top .header-top-item a {
     @apply flex gap-2;
@@ -81,22 +81,28 @@
   }
   .header .header-top .search,
   .bag {
-    @apply ms-10 flex h-full w-[49px] items-center justify-center bg-[#b1915f];
+    @apply relative ms-10 flex h-full w-[49px] items-center justify-center bg-[#b1915f];
+  }
+  .header .header-top .contenty{
+    @apply absolute top-0 xl:top-2 right-2 h-[13px] w-[13px] bg-[#ff3f4f] text-10 rounded-full text-White flex justify-center items-center;
   }
   .header .header-bottom {
     @apply relative flex h-90 items-center justify-evenly bg-white;
   }
   .header .header-bottom .logo {
-    @apply absolute left-3 top-0 z-20 w-[171px] xl:left-64;
+    @apply absolute left-3 top-0 z-20 w-171 xl:left-64;
   }
   .header .header-bottom .logo img {
-    @apply w-[100px] xl:w-auto;
+    @apply w-100 xl:w-auto;
   }
   .header-bottom-item {
-    @apply ms-auto flex h-full items-center justify-between xl:me-60 xl:w-[71%] xl:p-40;
+    @apply ms-auto flex flex-wrap h-full items-center justify-end xl:justify-between xl:me-100 w-full xl:w-[66%];
   }
   .header-bottom-item .navbar {
-    @apply hidden text-18 xl:block;
+    @apply hidden text-18 xl:block w-full xl:w-auto z-20 bg-White text-center mt-25 xl:mt-0 shadow-md xl:shadow-none;
+  }
+  .header-bottom-item .navbar li{
+    @apply my-4 xl:my-0;
   }
   .header-bottom-item .navbar ul li a:hover{
     @apply text-Brown-100;
@@ -110,7 +116,7 @@
     @apply absolute top-0 left-0;
   }
   .banner .banner-item {
-    @apply mt-40 w-full text-center xl:ms-100 xl:mt-0 xl:w-[953px] xl:text-left;
+    @apply mt-40 w-full text-center xl:ms-100 xl:mt-0 xl:w-953 xl:text-left;
   }
   .banner .banner-img .hourse {
     @apply xl:absolute bottom-0 right-0 w-auto xxxl:w-[650px];
@@ -119,7 +125,7 @@
     @apply absolute right-24 top-10 hidden xl:block;
   }
   .banner .group{
-    @apply animate-round
+    @apply animate-round;
   }
   .banner .location .location-icon {
     @apply absolute right-14 top-14;
@@ -130,7 +136,7 @@
     @apply left-[100px] grid h-[150.85px] grid-cols-1 text-White xl:absolute xl:-mt-32 xl:w-[1110px] xl:grid-cols-3;
   }
   .options .options-item {
-    @apply flex items-center justify-center gap-2 p-40;
+    @apply flex items-center justify-center gap-2 p-40 hover:shadow-md hover:shadow-Brown-100;
   }
   .options .options-item .img {
     @apply h-[80%];
@@ -147,13 +153,16 @@
     @apply flex gap-12;
   }
   .category .slid-btn{
-    @apply mt-3 flex h-48 w-48 items-center justify-center xl:mt-0;
+    @apply mt-3 flex h-48 w-48 items-center justify-center xl:mt-0 hover:shadow-sm hover:shadow-Brown-100;
   }
   .category .category-swiper {
     @apply mt-30 overflow-hidden text-white;
   }
+  .category .category-swiper .swiper-slide img:hover{
+    @apply shadow-md shadow-Brown-100;
+  }
   .category .category-swiper .slid-item {
-    @apply flex h-[74px] w-[322px] flex-col items-center justify-center rounded-bl-xl bg-Brown-100;
+    @apply flex h-74 w-322 flex-col items-center justify-center rounded-bl-xl bg-Brown-100;
   }
 
   /* seller */
@@ -164,7 +173,7 @@
     @apply flex gap-12 xl:hidden block;
   }
  .seller .slid-btn{
-    @apply mt-3 flex h-48 w-48 items-center justify-center xl:mt-0;
+    @apply mt-3 flex h-48 w-48 items-center justify-center xl:mt-0 hover:shadow-sm hover:shadow-Brown-100;
   }
   .seller .seller-item {
     @apply container m-auto flex flex-wrap items-center justify-between p-30;
@@ -172,9 +181,15 @@
   .seller .card {
     @apply h-435 bg-Brown-400 p-20 relative;
   }
-  .seller .card img,
+  .seller .card .img,
   .custom .custom-swiper img {
     @apply w-full;
+  }
+  .seller .tags{
+    @apply absolute top-0 left-0 flex h-[38px]; 
+  }
+  .seller .tags .tag-item{
+    @apply bg-white text-Brown-100 text-14 font-PlusJakarta leading-9 px-20;
   }
   .seller .seller-item2 {
     @apply container m-auto p-30 text-White;
@@ -186,7 +201,7 @@
     @apply py-20 font-PlusJakarta text-14;
   }
   .seller .cart-btn {
-    @apply absolute bottom-3 bg-Brown-100 px-82 py-15 font-Montserrat text-18 font-700 lg:px-60 xl:px-[107px] hover:bg-Crem-300 hover:text-Brown-100 hover:rounded-md duration-300;
+    @apply absolute bottom-3 bg-Brown-100 px-82 py-15 font-Montserrat text-18 font-700 lg:px-60 xl:px-107 hover:bg-Crem-300 hover:text-Brown-100 hover:rounded-md duration-300;
   }
 
   /* custom */
@@ -203,7 +218,7 @@
     @apply bg-Brown-400 p-20 text-White;
   }
   .custom .custom-btn {
-    @apply bg-Brown-100 px-50 py-15 font-Montserrat text-18 font-bold xl:px-[138px];
+    @apply bg-Brown-100 px-50 py-15 font-Montserrat text-18 font-bold xl:px-[138px] hover:bg-Crem-400 hover:shadow-lg;
   }
   .custom .swiper-pagination {
     @apply absolute mt-20;
@@ -232,7 +247,7 @@
     @apply absolute left-0 top-[35%] flex w-full justify-between;
   }
   .Testimonials .slid-btn {
-    @apply h-[48px] w-[48px];
+    @apply h-48 w-48 hover:shadow-sm hover:shadow-Brown-100;
   }
 
   /* who-we-are */
@@ -245,15 +260,15 @@
 
   /* contact */
   .contact{
-    @apply xl:absolute left-60 m-auto border-4 border-White xl:w-[1394px] h-auto xl:h-290 bg-Crem-300 flex flex-wrap items-center justify-center p-10 xl:p-0 overflow-hidden;
+    @apply xl:absolute left-60 1450:left-5 m-auto border-4 border-White xl:w-[1394px] h-auto xl:h-290 bg-Crem-300 flex flex-wrap items-center justify-center p-10 xl:p-0 overflow-hidden;
   }
   .contact .btn-order{
-    @apply border border-Brown-100 px-40 py-14 text-Brown-100 font-700 font-Montserrat;
+    @apply border border-Brown-100 px-40 py-14 text-Brown-100 font-700 font-Montserrat hover:bg-Brown-100 hover:text-White duration-200;
   }
 
   /* footer */
   .footer{
-    @apply bg-Brown-100 h-auto xl:h-[715px] xl:pt-90 z-10 xl:mt-[230px];
+    @apply bg-Brown-100 h-auto xl:h-715 xl:pt-90 z-10 xl:mt-[230px];
   }
   .footer .footer-menu{
     @apply flex flex-col xl:w-[1394px] m-auto;
@@ -274,7 +289,7 @@
     @apply h-40 w-40 bg-White flex justify-center items-center hover:bg-Crem-300 hover:rounded-10 duration-300;
   }
   .footer .bluePrint{
-    @apply flex flex-wrap items-center justify-between px-20 xl:px-40 py-20 border-t;
+    @apply flex flex-wrap items-center justify-between px-20 xl:px-70 py-20 border-t;
   }
 }
 

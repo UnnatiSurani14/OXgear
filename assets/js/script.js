@@ -1,24 +1,28 @@
 // toggle
-let toggle=document.getElementById('toggle');
-let nav=document.getElementById('navbar');
+let toggle = document.getElementById('toggle')
+let nav = document.getElementById('navbar')
 
-toggle.addEventListener("click",function(){
-  if (nav.style.display === "none" || nav.style.display === "") {
-    nav.style.display = "block";
+toggle.addEventListener('click', function () {
+  if (nav.style.display === 'none' || nav.style.display === '') {
+    nav.style.display = 'block'
   } else {
-    nav.style.display = "none";
+    nav.style.display = 'none'
   }
 })
 
-let searchbar=document.getElementById("searchbar");
-let search=document.getElementById("search");
-search.addEventListener("click",function(){
-  if (searchbar.style.display === "none" || searchbar.style.display === "") {
-    searchbar.style.display = "block";
-  } else {
-    searchbar.style.display = "none";
-  }
-});
+// search
+document.addEventListener('DOMContentLoaded', function () {
+  let search = document.getElementById('search')
+  let searchbar = document.getElementById('searchbar')
+
+  search.addEventListener('click', function () {
+    if (searchbar.style.display === 'none' || searchbar.style.display === '') {
+      searchbar.style.display = 'block'
+    } else {
+      searchbar.style.display = 'none'
+    }
+  })
+})
 
 // category-slider
 document.addEventListener('DOMContentLoaded', function () {
