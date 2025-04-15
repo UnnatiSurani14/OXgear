@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       animation: {
         round: 'round 10s infinite',
+        upDown: 'upDown 5s infinite',
       },
       keyframes: {
         round: {
@@ -12,6 +13,10 @@ module.exports = {
           '50%': { transform: 'rotate(180deg)' },
           '75%': { transform: 'rotate(270deg)' },
           '100%': { transform: 'rotate(360deg)' },
+        },
+        upDown: {
+          '0%,100%': { transform: 'rotate(10deg)' },
+          '50%': { transform: 'rotate(-5deg)' },
         },
       },
       fontFamily: {
@@ -43,7 +48,7 @@ module.exports = {
         auto: '1 1 auto',
       },
       fontSize: {
-        10:'10px',
+        10: '10px',
         12: '12px',
         14: '14px',
         15: '15.18px',
@@ -80,7 +85,7 @@ module.exports = {
         82: '82px',
         90: '90px',
         105: '105px',
-        107:'107px',
+        107: '107px',
         135: '135px',
       },
       margin: {
@@ -117,20 +122,22 @@ module.exports = {
       width: {
         40: '40px',
         48: '48px',
-        100:'100px',
-        171:'171px',
-        322:'322px',
-        953:'953px',
+        100: '100px',
+        171: '171px',
+        322: '322px',
+        650:'650px',
+        953: '953px',
       },
       height: {
         40: '40px',
         48: '48px',
         51: '51px',
-        74:'74px',
+        74: '74px',
         90: '90px',
         290: '290px',
         435: '435px',
-        715:'715px',
+        715: '715px',
+        813:'813px',
       },
       screens: {
         lg: { min: '1024px' },

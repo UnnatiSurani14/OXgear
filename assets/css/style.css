@@ -67,6 +67,9 @@
   .header .header-top {
     @apply h-auto bg-Brown-300 font-Montserrat text-14 text-White xl:h-51;
   }
+  .header .header-top a:hover{
+    @apply text-Brown-100 font-500;
+  }
   .header .header-top-menu{
     @apply container ms-auto flex flex-wrap justify-center sm:justify-between items-center h-full xl:px-105;
   }
@@ -110,7 +113,7 @@
 
   /* banner */
   .banner {
-    @apply z-0 flex h-auto flex-wrap items-center justify-between bg-Crem-200 xl:h-[813px] relative;
+    @apply z-0 flex h-auto flex-wrap items-center justify-between bg-Crem-200 xl:h-813 relative;
   }
   .banner .image{
     @apply absolute top-0 left-0;
@@ -119,7 +122,7 @@
     @apply mt-40 w-full text-center xl:ms-100 xl:mt-0 xl:w-953 xl:text-left;
   }
   .banner .banner-img .hourse {
-    @apply xl:absolute bottom-0 right-0 w-auto xxxl:w-[650px];
+    @apply xl:absolute bottom-0 right-0 w-auto xxxl:w-650;
   }
   .banner .banner-img .location {
     @apply absolute right-24 top-10 hidden xl:block;
@@ -256,6 +259,9 @@
   }
   .who-we-are .img{
     @apply h-[20px] w-[20px];
+  }
+  .who-we-are .hourse-design{
+    @apply animate-upDown
   }
 
   /* contact */

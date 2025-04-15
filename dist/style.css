@@ -986,6 +986,12 @@ video {
   }
 }
 
+.header .header-top a:hover {
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(94 54 20 / var(--tw-text-opacity, 1));
+}
+
 .header .header-top-menu {
   width: 100%;
 }
@@ -1983,6 +1989,20 @@ video {
 .who-we-are .img {
   height: 20px;
   width: 20px;
+}
+
+@keyframes upDown {
+  0%,100% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+
+.who-we-are .hourse-design {
+  animation: upDown 5s infinite;
 }
 
 /* contact */
