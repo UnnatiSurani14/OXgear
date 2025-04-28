@@ -84,7 +84,7 @@
   }
   .header .header-top .search,
   .bag {
-    @apply relative ms-10 flex h-full w-[49px] items-center justify-center bg-[#b1915f];
+    @apply relative ms-10 flex h-full w-[49px] items-center justify-center bg-[#b1915f] delay-300;
   }
   .header .header-top .contenty{
     @apply absolute top-0 xl:top-2 right-2 h-[13px] w-[13px] bg-[#ff3f4f] text-10 rounded-full text-White flex justify-center items-center;
@@ -108,12 +108,12 @@
     @apply my-4 xl:my-0;
   }
   .header-bottom-item .navbar ul li a:hover{
-    @apply text-Brown-100;
+    @apply text-Brown-100 border-b-2 border-Brown-200;
   }
 
   /* banner */
   .banner {
-    @apply z-0 flex h-auto flex-wrap items-center justify-between bg-Crem-200 xl:h-813 relative;
+    @apply z-0 h-auto flex flex-wrap items-center justify-between bg-Crem-200 xl:h-813 relative;
   }
   .banner .image{
     @apply absolute top-0 left-0;
@@ -122,7 +122,7 @@
     @apply mt-40 w-full text-center xl:ms-100 xl:mt-0 xl:w-953 xl:text-left;
   }
   .banner .banner-img .hourse {
-    @apply xl:absolute bottom-0 right-0 w-auto xxxl:w-650;
+    @apply xl:absolute bottom-0 right-0;
   }
   .banner .banner-img .location {
     @apply absolute right-24 top-10 hidden xl:block;

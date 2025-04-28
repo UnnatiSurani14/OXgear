@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     slidesPerView: 3,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.custome-pagintion.swiper-pagination',
       dynamicBullets: false,
       clickable: true,
     },
