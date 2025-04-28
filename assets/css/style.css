@@ -136,7 +136,7 @@
 
   /* options */
   .options {
-    @apply left-[100px] grid h-[150.85px] grid-cols-1 text-White xl:absolute xl:-mt-32 xl:w-[1110px] xl:grid-cols-3;
+    @apply left-[100px] grid h-[150.85px] grid-cols-1 text-White xl:absolute xl:-mt-32 xl:w-[1110px] lg:grid-cols-3;
   }
   .options .options-item {
     @apply flex items-center justify-center gap-2 p-40 hover:shadow-md hover:shadow-Brown-100;
@@ -147,7 +147,7 @@
 
   /* category */
   .category {
-    @apply container mt-96 p-2 xl:m-48;
+    @apply container mt-96 p-2 lg:mt-50 xl:m-48;
   }
   .category .category-item {
     @apply flex flex-wrap items-center justify-between xl:pe-60;

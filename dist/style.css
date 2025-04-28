@@ -1344,12 +1344,17 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+@media (min-width: 1024px) {
+  .options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1200px) {
   .options {
     position: absolute;
     margin-top: -8rem;
     width: 1110px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -1436,6 +1441,12 @@ video {
 .category {
   margin-top: 24rem;
   padding: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .category {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -2240,6 +2251,10 @@ video {
 
   .lg\:w-\[40\%\] {
     width: 40%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:w-\[60\%\] {

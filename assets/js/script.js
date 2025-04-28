@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.seller-swiper', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.seller-prev.swiper-button-next',
+      prevEl: '.seller-next.swiper-button-prev',
     },
     spaceBetween: 30,
     breakpoints: {
@@ -64,10 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.custom-swiper', {
     loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     slidesPerView: 3,
     pagination: {
       el: '.custome-pagintion.swiper-pagination',
