@@ -140,6 +140,7 @@ module.exports = {
         813:'813px',
       },
       screens: {
+        lg2:{min:'768px'},
         lg: { min: '1024px' },
         xl: { min: '1200px' },
         xxl: { min: '1366px' },
